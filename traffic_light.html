@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Traffic light</title>
+		/-- .. --/
+		<style>
+			.container{
+				width: 300px;				
+				background: black;
+				margin: auto;
+				padding-top: 10px; /* internal space*/
+				padding-bottom: 10px;
+				border: 4px solid gray;							
+			}
+			.red-block, .yellow-block, .lime-block{			
+				width: 150px;
+				height: 150px;
+				background: grey;				
+				margin: auto;
+				cursor: pointer;
+				border-radius: 75px; /*radius as diameter of circle calculated from width and height of square*/
+				margin-bottom: 10px; /*margin - external space*/
+				border: 2px solid silver;
+				box-shadow: inset 0 0 10px 5px rgb(0,0,0,0.5);/*10px - размытиеб 5px - ширина тени*/
+			}
+			.red-block:hover{
+				background: red;				
+			}
+			.yellow-block:hover{
+				background: yellow;			
+			}
+			.lime-block:hover{
+				background: lime;			
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="red-block"></div>
+			<div class="yellow-block"></div>
+			<div class="lime-block"></div>
+		</div>
+	</body>
+</html>
