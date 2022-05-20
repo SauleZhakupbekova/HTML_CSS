@@ -1,0 +1,60 @@
+<!doctype html> <!--ставлю ! надимаю клавишу TAB и сразу получаю макет-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position</title>
+        <style>
+            .lime-box{ /*--https://sprutio.beget.com/# --*/
+                background: lime; /*--"CTRL+space" - for taking tips--*/
+                width: 150px;
+                height: 150px;
+                position: fixed; /*-- fixed position -  фиксирует позицию и кнопка перестает лвигаться http://htmlbook.ru/css/position--*/
+                right: 10px; /*--указывают угол экрана--*/
+                bottom: 10px;
+                z-index: -1;  /*-- позволяет регулировать прозрачность, перемещая объект назад--*/
+            }
+            .blue-box{
+                background: blue;
+                width: 75px;
+                height: 75px;
+                position: absolute;/*-- leading position - http://htmlbook.ru/css/position--*/
+                left: 0;
+                top: 0;
+            }
+            .yellow-box{
+                background: yellow;
+                width: 100px;
+                height: 100px;
+                position: fixed;
+                right: 35px;
+                bottom: 35px;
+                z-index: 1;  /*-- выводит объект вперед. Если 0 - то назад--*/
+            }
+            .red-box{
+                background: red;
+                width: 150px;
+                height: 150px;
+                position: relative;/*-- relative position - резервирует место, так что строка прокрутки остается всегда пустой (наверзу в данном случае)--*/
+            }
+            .orange-box{
+                background: orange;
+                width: 75px;
+                height: 75px;
+                position: absolute;
+                top: 75px;
+                left: 75px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="yellow-box"></div>
+        <div class="red-box"></div>
+             <div class="orange-box"></div> 
+        <div class="lime-box">
+             <div class="blue-box"></div> <!-- static position - позиция по умолчанию--> 
+        </div>
+        <!--lorem1000 - позволяет вставить текст из 1000 слов с сайта lorem-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, blanditiis sunt aliquam saepe error aspernatur quasi id? Velit, officia, dolorum sapiente explicabo repellendus earum saepe excepturi aperiam minus architecto soluta aspernatur totam fugiat eaque temporibus. Tempora, totam laudantium repellendus excepturi hic vero in soluta eveniet est dicta culpa sit asperiores doloribus voluptatibus repellat aspernatur voluptatem expedita qui repudiandae incidunt quia facere ipsum eius vitae sunt pariatur voluptate possimus fuga nemo dolorum architecto aliquam animi consequuntur. Dolorum, quaerat eum dignissimos ipsa fuga accusantium vel doloribus quidem cum corporis magni veritatis consectetur modi ad quisquam quia facere. Dicta voluptatum possimus tempora omnis quis repudiandae dolor deleniti totam aperiam aliquid. Temporibus, iure, est, rem itaque molestiae facere ut deleniti excepturi aliquid cum praesentium nesciunt dolorum repellat ullam consequuntur deserunt aspernatur nulla unde assumenda dicta. Doloribus, cupiditate, labore ab quia sunt modi culpa ut quidem ratione error quo iusto possimus iste eius at aut perspiciatis harum molestiae suscipit nulla magnam tenetur a libero inventore iure recusandae soluta ipsum optio nisi sequi unde corporis quis quasi veniam nesciunt autem voluptates eaque ipsam voluptatum temporibus vero dicta assumenda et perferendis distinctio aliquid? Dicta reprehenderit ea illo similique ipsum. Alias, nihil, natus similique quidem doloremque debitis quas voluptatibus dolore officiis eius ullam labore odio explicabo laborum tempore minima commodi fugiat quasi asperiores consectetur rerum deleniti sed fugit molestias error! Dolores, magnam, at enim ipsum cum ex veritatis aut ducimus sit pariatur et totam voluptatum laboriosam voluptatibus nemo qui praesentium corporis fugiat eum excepturi ipsam autem quaerat suscipit dignissimos adipisci nesciunt molestias in repudiandae dolor vel sunt dicta ad porro. Modi, ut, corporis quisquam iure totam laudantium deleniti perspiciatis velit soluta voluptatem nisi rem magni repellendus similique reprehenderit quia deserunt eligendi distinctio rerum autem. Eos, tempora, ex accusantium amet nobis rerum dicta facilis saepe numquam vel temporibus accusamus quam quos corporis suscipit quidem sequi. Quis, nisi, soluta, eos, cumque itaque totam minima nobis iure ab magnam iste cupiditate nesciunt ipsa dolor qui adipisci enim pariatur omnis repellendus libero. Sint, necessitatibus, et, consequuntur assumenda eius laborum quod culpa totam molestias voluptatibus natus magni aut deserunt ipsum in tenetur dicta distinctio fugit laboriosam quis reiciendis dolorum expedita eligendi magnam mollitia unde quia. Iure, aperiam, magnam, earum fugiat aliquam non possimus inventore rerum illo fugit eius consequuntur corrupti eos modi quos quia vitae! Id, est error perspiciatis mollitia eum quasi totam quibusdam. Beatae, numquam, perspiciatis, facere, officiis molestiae quos magni veniam adipisci vero neque quibusdam autem aut error repellat soluta earum illo modi voluptates architecto dolore libero reprehenderit voluptatibus hic quis nam vel cupiditate deleniti eaque optio eligendi ducimus culpa nisi veritatis maxime cum dolorem doloribus quam ipsum facilis sunt temporibus odit quas blanditiis nobis consectetur labore? Tenetur, sint, unde, minima, nostrum eum pariatur nesciunt ratione a magnam obcaecati nulla voluptate repellendus debitis explicabo iure ex reiciendis quae aliquid quos accusantium alias recusandae quasi nam velit aut dolorem eligendi optio non modi veniam. Repellat, delectus blanditiis vitae a illum quam recusandae tenetur doloribus suscipit perspiciatis officia praesentium pariatur earum facilis alias? Fugiat, rem, incidunt, odit, repudiandae adipisci aliquam deleniti suscipit aliquid animi ducimus ea quo officiis vero! Praesentium, magni, commodi, quos fugit a amet saepe tempora qui nam quidem officiis repudiandae pariatur deserunt? Aliquid, velit, dolorem, pariatur, provident consequuntur dolores eveniet rerum obcaecati laboriosam optio quos ab. Perferendis, non, dignissimos, molestias necessitatibus voluptates ex ullam illo quae optio adipisci quas minus aliquam dolores aliquid libero enim doloribus excepturi molestiae ratione quidem sapiente neque expedita alias at rem corporis hic totam. Ratione, dolor, provident, ducimus delectus odit recusandae quaerat ut eius autem architecto esse adipisci modi neque necessitatibus ipsa! Nesciunt, quibusdam vel pariatur perspiciatis commodi dolorum porro doloremque harum voluptates illo a itaque tenetur debitis quos fuga facilis quo accusantium. Eum, earum, amet dolore est quod similique eaque nemo eligendi reiciendis nulla unde ad asperiores illo velit doloremque laudantium dolores quas delectus officiis autem possimus deserunt vitae iusto. Explicabo, libero, impedit quidem ea mollitia praesentium eveniet exercitationem ex tenetur consequatur vel sequi numquam vitae. Nulla, laboriosam, eveniet, vero animi reprehenderit molestias assumenda ex asperiores enim optio commodi quisquam vitae pariatur sit beatae molestiae quas et illum alias quasi nemo. Rem, voluptatibus voluptates dolor error repudiandae vero officia esse animi est reiciendis architecto molestias ex quod quibusdam ducimus maxime nesciunt at blanditiis nostrum nemo corrupti pariatur sunt facilis quo excepturi nisi dolore. Nulla, id, reiciendis assumenda obcaecati laborum illo minima sapiente repellendus commodi nesciunt incidunt doloribus quas. Dicta, voluptatibus, hic ut molestias modi non asperiores quisquam consequuntur aliquid id? Voluptate, eveniet, corporis rem quidem qui praesentium dolorem esse minus adipisci veritatis quae nam incidunt repudiandae id culpa itaque in enim sequi a dignissimos reprehenderit laborum molestias reiciendis ducimus magni deserunt natus accusamus nesciunt aliquid optio ad officia recusandae alias. Officiis, reiciendis, molestiae reprehenderit laborum voluptate harum consectetur adipisci et ab veniam animi quibusdam praesentium culpa delectus deleniti dicta nam dolorum totam minima earum amet aperiam placeat. Aspernatur, cupiditate, pariatur, minus esse autem porro voluptatum vel nulla et ex quisquam tempore accusantium consequatur quos quo id reprehenderit animi necessitatibus maxime incidunt placeat. Alias, similique vero consectetur aperiam error voluptates molestias fugiat eligendi iusto pariatur neque eum nihil aliquid dolore velit temporibus laboriosam placeat ipsam voluptas dolorem nobis sint ab fuga magni quo autem accusamus amet ea corporis maiores cumque sequi a id facilis atque enim aliquam dolores tempore porro ipsa quaerat iure assumenda officiis adipisci quidem magnam. Animi, doloribus dolorem sapiente voluptas laboriosam nesciunt sint at. Ipsam, aspernatur, cupiditate. Fugiat, ipsum, porro, rem sint pariatur quo eos maiores corporis reprehenderit aperiam quod est delectus consequatur eaque magni nihil velit doloremque architecto vel ullam adipisci minus voluptates natus deserunt eveniet et suscipit illum nemo odio incidunt exercitationem expedita nulla ab. Iure aperiam ducimus obcaecati architecto impedit assumenda inventore atque animi officia quam. Alias, nam accusantium a vitae ab quae! Mollitia, natus, corporis est quos autem rem aut in numquam voluptatem eius cum iste eaque quas consectetur labore laboriosam facilis. Velit, repellat, nesciunt, magni rem possimus sequi rerum nostrum iure quos perferendis deleniti voluptatibus labore. Est.</p>
+        <!--Три раза кликнуть по мышки и все предложение выделится-->
+    </body>
+</html>
