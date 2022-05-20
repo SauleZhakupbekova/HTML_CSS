@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #plane{
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <img id="plane" width="200px" src="https://airbus-h.assetsadobe2.com/is/image/content/dam/products-and-solutions/commercial-aircraft/a220-family/a220-300/a220-300-specs-side.png" alt="" />
+    <script>
+        let plane = document.getElementById('plane');
+        let i=0;
+        setInterval(()=>{
+            i++;
+            plane.style.left=i+"px";
+        }, 20)
+    </script>
+</body>
+</html>
