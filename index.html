@@ -21,7 +21,7 @@
 	</style>
   </head>
   <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
 	  <div class="container-fluid">
 		<a class="navbar-brand" href="#">Navbar</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,7 @@
 			  <a class="nav-link active" aria-current="page" href="#">Home</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Contact-us</a>
+			  <a class="nav-link" href="#contacts">Contact-us</a>
 			</li>
 			<li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,9 +45,6 @@
 				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item" href="#">Something else here</a></li>
 			  </ul>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 			</li>
 		  </ul>
 		  <form class="d-flex">
@@ -106,34 +100,28 @@
 		</div>
 	</div>
 	
+	<a name="contacts"></a>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <h2 class="text-center mb-3">Contact-us</h2>
-                    <div class="my-3">
-                        <i class="fa-solid fa-location-dot fa-1x"></i>
-                        <p class="h6">WEB Site Solution
+                <div class="col-sm-3">
+                    <h2 class="mb-3">Contact-us</h2>
+                        <h6><i class="fa-solid fa-location-dot fa-1x"></i> LOCATION:</h6>
+                        <p class="fs-6">WEB Site Solution
                         <br>
-                        "P.O. box 43083 Cascade"
+                        P.O. box 43083 Cascade
                         <br>
-                        "Burnaby BS 45"
-                        <br>
-                        "Canada"
+                        4, Abay ave.
+                        Kazakhstan
                         </p>
-                    </div>
-                    <div class="my-3">
-                        <i class="fa-solid fa-square-phone fa-1x"></i> 
-                        <p class="h6">+7(701)501-50-28</p>
-                    </div>
-                    <div class="my-3">
-                        <i class="fa-solid fa-at fa-1x"></i>
-                        <p class="h6">saule2000@mail.ru</p>
-                    </div>
-            </div>
-            <div class="col-sm-8">
-                <h2 class="text-center mb-3">Feedback</h2>
-                <form action="/php/handlerForm.php" method="post">
-                	<div class="my-3">
+                        <h6><i class="fa-solid fa-square-phone fa-1x"></i> PHONE:</h6>
+                        <p class="fs-6">+7(701)501-50-28</p>
+                        <h6><i class="fa-solid fa-at fa-1x"></i> EMAIL:</h6>
+                        <p class="fs-6">saule2000@mail.ru</p>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-center mb-3">Feedback</h2>
+                    <form action="/php/handlerForm.php" method="post">
+                	<div class="my-4">
                 		<input name="name" class="form-control" placeholder="name">
                 	</div>
                 	<div class="mb-3">
@@ -145,11 +133,20 @@
                 	<div class="mb-3">
                 		<input type="submit" class="form-control btn btn-primary"> 
                 	</div>
-                </form>
-            </div>
+                    </form>
+                </div>
+                
+                <div class="col-sm-2 mx-auto">
+	                <h2 class="mb-3"></h2>
+	                   <iframe src="https://www.google.com/maps/d/embed?mid=13IfjRXOqsqadwtyXTHzDDRWifCetwofy&ehbc=2E312F" width="370" height="280"></iframe></iframe>
+	            </div>
         </div>
     </div>
-	
+
+    <footer class="container-fluid py-5 bg-secondary bg-gradient">
+        <p class="text-center text-white">2022 &copy; All rights are protected</p>
+    </footer>
+
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
